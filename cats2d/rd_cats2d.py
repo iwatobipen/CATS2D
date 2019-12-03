@@ -1,10 +1,10 @@
-
 # Original work by...
 # Rajarshi Guha <rguha@indiana.edu>
 # 08/26/07
 # And RDkit Hack by Chris Arthur 1/11/2015
 from rdkit import Chem
 import numpy as np
+
 
 cats_smarts = {
     'D' : ['[!$([#6,H0,-,-2,-3])]'],
