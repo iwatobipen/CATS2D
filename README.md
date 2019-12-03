@@ -1,5 +1,10 @@
 # CATS2D: CATS2D descriptor generator with RDKit
 rdkit_cats2d
+- Original work
+  - http://www.rguha.net/code/python/cats2d.py
+  - https://github.com/arthuc01/RDKit-Cats2D
+
+
 
 ## Requirements
 - RDKit
