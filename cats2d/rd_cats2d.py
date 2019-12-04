@@ -128,7 +128,7 @@ class CATS2D():
         pppmat = self.getPPPMatrix(tdistmat, ppp_labels)
     
         # get the occurence of each of the PPP's
-        ppp_count = dict(zip(['D','N', 'A', 'P', 'L', 'R'], [0]*5))
+        ppp_count = dict(zip(['D','N', 'A', 'P', 'L', 'R'], [0]*6))
         for label in ppp_labels:
             for ppp in label:
                 ppp_count[ppp] = ppp_count[ppp] + 1
