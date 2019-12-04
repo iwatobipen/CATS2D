@@ -134,7 +134,7 @@ class CATS2D():
                 ppp_count[ppp] = ppp_count[ppp] + 1
     
         # lets calculate the CATS2D raw descriptor
-        desc = [ [0 for x in range(0, self.max_path_len+1)] for x in range(0,15)]
+        desc = [ [0 for x in range(0, self.max_path_len+1)] for x in range(0,21)]
         for x,y in pppmat.keys():
             labels = pppmat[x,y]
             dist = tdistmat[x][y]
