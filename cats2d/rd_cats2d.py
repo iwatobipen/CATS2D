@@ -13,13 +13,16 @@ cats_smarts = {
     'N' : ['[*-]', '[C&$(C(=O)O),P&$(P(=O)),S&$(S(=O)O)]'],
     'L' : ['[Cl,Br,I]', '[S;D2;$(S(C)(C))]',
        '[C;D2;$(C(=C)(=C))]', '[C;D3;$(C(=C)(C)(C))]', '[C;D4;$(C(C)(C)(C)(C))]',
-       '[C;D3;H1;$(C(C)(C)(C))]', '[C;D2;H2;$(C(C)(C))]',]
+       '[C;D3;H1;$(C(C)(C)(C))]', '[C;D2;H2;$(C(C)(C))]'],
+    'R' : ['[a]']
 }
     
-cats_desc = ['DD','AD', 'DP', 'DN', 'DL',
-         'AA', 'AP', 'AN', 'AL',
-         'PP', 'NP', 'LP',
-         'NN', 'LN', 'LL']
+cats_desc = ['DD','AD', 'DP', 'DN', 'DL', 'DR',
+         'AA', 'AP', 'AN', 'AL', 'AR',
+         'PP', 'NP', 'LP', 'PR',
+         'NN', 'LN', 'NR',
+         'LL', 'LR',
+         'RR']
 
 class CATS2D():
 
@@ -125,7 +128,7 @@ class CATS2D():
         pppmat = self.getPPPMatrix(tdistmat, ppp_labels)
     
         # get the occurence of each of the PPP's
-        ppp_count = dict(zip(['D','N', 'A', 'P', 'L'], [0]*5))
+        ppp_count = dict(zip(['D','N', 'A', 'P', 'L', 'R'], [0]*5))
         for label in ppp_labels:
             for ppp in label:
                 ppp_count[ppp] = ppp_count[ppp] + 1
